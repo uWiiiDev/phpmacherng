@@ -1,0 +1,27 @@
+# Exclude sensitive Studio user accounts & local authentication files
+projects/.studio_auth.json
+projects/.studio_users.json
+projects/.vcs/
+
+# Exclude local MariaDB/MySQL database files
+.mariadb_data/
+
+# Keep only the demo project (crm_shop_demo.pmp.json) in the repository;
+# ignore all private user projects:
+projects/*.pmp.json
+projects/*.json
+!projects/crm_shop_demo.pmp.json
+
+# Keep only the generated demo project in the output directory:
+output/*
+!output/crm_shop_demo/
+
+# Operating system & IDE files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
